@@ -1,6 +1,7 @@
 import {
   Box,
-  Flex
+  Flex,
+  Text
 } from '@chakra-ui/react'
 
 export default function SubItem() {
@@ -26,13 +27,13 @@ export default function SubItem() {
         >
           S
         </Flex>
-        <Flex flexDir="column">
-          <Box fontSize={14}>Spotify</Box>
-          <Box fontSize={12}>22 dec 2021</Box>
+        <Flex flexDir="column" justify="space-between">
+          <Box fontSize={15} lineHeight="shorter">Spotify</Box>
+          <Box fontSize={12} lineHeight="short">22 dec 2021</Box>
         </Flex>
       </Flex>
       <Box>
-        75₽
+        <Text as="span" mr={0.5}>75</Text>₽
       </Box>
     </Flex>
   )

@@ -18,13 +18,12 @@ export default function Home() {
     {/* <= 768px content */}
     <Container
       display={['block', 'block', 'none']}
-      bg="lightgray"
       pt={5}
       h="100vh"
       color="spacejelly"
     >
       <Text mb={3}>My Subs</Text>
-      
+
       <SubItem />
       <SubItem />
 
