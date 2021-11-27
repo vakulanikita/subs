@@ -19,7 +19,7 @@ export default function Main({ children, title = "page", align = "left" }) {
         flexShrink={0}
         py={2}
         h="100vh"
-        color="spacejelly"
+        color="spacejelly.base"
         align={align}
       >
         { children }
