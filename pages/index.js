@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import NextLink from 'next/link'
+import Main from '../components/layouts/main'
 import { 
   Text,
   Container,
@@ -14,28 +16,19 @@ import SubItem from '../components/sub-item'
 
 export default function Home() {
   return (
-    <>
-    {/* <= 768px content */}
-    <Container
-      display={['block', 'block', 'none']}
-      pt={5}
-      h="100vh"
-      color="spacejelly"
-    >
+    <Main title="Dashboard">
       <Text mb={3}>My Subs</Text>
 
       <SubItem />
       <SubItem />
 
-    </Container>
+      <NextLink href="./sign-in">
+        <Link>Go to SignIN</Link>
+      </NextLink>
 
-    {/* >768px content */}
-    <Container
-      display={['none', 'none', 'block']}
-      pt={8}
-    >
-      <Alert status="warning"><AlertIcon />Subs доступно только на мобильных устройствах</Alert>
-    </Container>
-    </>
+      <NextLink href="./sign-up">
+        <Link>Go to SignUP</Link>
+      </NextLink>
+    </Main>
   )
 }
