@@ -10,7 +10,7 @@ import {
   Heading,
   Alert,
   AlertIcon,
-  Link
+  Link,
 } from "@chakra-ui/react"
 import SubItem from '../components/sub-item'
 import PanelBottom from '../components/panel-bottom'
