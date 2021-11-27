@@ -13,22 +13,35 @@ import {
   Link
 } from "@chakra-ui/react"
 import SubItem from '../components/sub-item'
+import PanelBottom from '../components/panel-bottom'
 
 export default function Home() {
+
   return (
     <Main title="Dashboard">
-      <Text mb={3}>My Subs</Text>
+      <Heading
+        as="h3"
+        fontSize="2xl"
+        mb={3}
+      >
+        Your <br /> Subscriptions
+      </Heading>
 
-      <SubItem />
-      <SubItem />
+      <Box flexGrow={1}>
+        <SubItem />
+        <SubItem />
 
-      <NextLink href="./sign-in">
-        <Link>Go to SignIN</Link>
-      </NextLink>
+        <NextLink href="./sign-in">
+          <Link>Go to SignIN</Link>
+        </NextLink>
+        <br />
+        <NextLink href="./sign-up">
+          <Link>Go to SignUP</Link>
+        </NextLink>
+      </Box>
 
-      <NextLink href="./sign-up">
-        <Link>Go to SignUP</Link>
-      </NextLink>
+
+      <PanelBottom />
     </Main>
   )
 }

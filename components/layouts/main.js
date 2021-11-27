@@ -14,8 +14,10 @@ export default function Main({ children, title = "page", align = "left" }) {
       </Head>
       {/* <= 768px content */}
       <Container
-        display={['block', 'block', 'none']}
-        pt={5}
+        display={['flex', 'flex', 'none']}
+        flexDir="column"
+        flexShrink={0}
+        py={2}
         h="100vh"
         color="spacejelly"
         align={align}
